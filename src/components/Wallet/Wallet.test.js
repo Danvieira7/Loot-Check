@@ -3,8 +3,8 @@ import { shallow } from "enzyme";
 import { Wallet } from "./Wallet";
 
 describe('Wallet', () => {
-    const mockDeposit = jest.fn()
-    const mockWithdraw = jest.fn()
+    const mockDeposit = jest.fn();
+    const mockWithdraw = jest.fn();
     const props = { 
         balance: 20, 
         deposit: mockDeposit,
