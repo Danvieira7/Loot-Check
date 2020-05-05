@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { deposit, withdraw } from "../../actions/balance";
 
-// don't export Wallet class as default 
 export class Wallet extends Component {
     constructor() {
         super()

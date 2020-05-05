@@ -9,9 +9,6 @@ describe('balance reducer', () => {
         
         it('sets a balance', () => {
             expect(
-                // balanceReducer() is a pure function that accepts 2 args: 
-                // 1st arg is the previous state 
-                // and the 2nd arg is the data for the action
                 balanceReducer(undefined, { type: constants.SET_BALANCE, balance })
             ).toEqual(balance);
         });

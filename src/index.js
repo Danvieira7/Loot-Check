@@ -6,7 +6,8 @@ import rootReducer from "./reducers";
 import { Provider } from"react-redux";
 import App from "./pages/App/App";
 
-// distribute the store to the app in it's higher component
+import "./index.css"
+
 render(
     <Provider store={ createStore(rootReducer, applyMiddleware(thunk))}>
         <App />

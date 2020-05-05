@@ -1,5 +1,3 @@
-// imports the action objects and change 
-// the state acordingly to the action.type
 import * as constants from "../actions/constants";
 import { read_cookie, bake_cookie } from "sfcookies";
 
