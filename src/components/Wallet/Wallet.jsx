@@ -19,16 +19,17 @@ export class Wallet extends Component {
     deposit = () => this.props.deposit(this.state.balance);
     
     withdraw = () => this.props.withdraw(this.state.balance);
-    
 
     render() {
         return (
             <div>
-                <h3 className="balance">Wallet balance: { this.props.balance }</h3>
-                <br />
-                <input className="input-wallet" onChange={this.updateBalance} />
-                <button className="btn-deposit" onClick={this.deposit}>Deposit</button>
-                <button className="btn-withdraw" onClick={this.withdraw}>Withdraw</button>
+                <div className="card">
+                    <h3 className="balance">Wallet Balance: <br/>${ this.props.balance }</h3>
+                    <br />
+                    <input className="input-wallet" onChange={this.updateBalance} /><br/>
+                    <button className="btn-deposit btn btn-success" onClick={this.deposit}>Deposit</button>
+                    <button className="btn-withdraw btn btn-success" onClick={this.withdraw}>Withdraw</button>
+                </div>
             </div>
         )
     }
